@@ -3,11 +3,18 @@ body{
 }
 .hero{
     background-position: center;
-    background-size: cover;
+    
 }
-.jumbotron{
+.jumbotron.hero{
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/bridge.png");
+    
     border-radius: 0;
+}
+.jumbotron.hero-project{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("../img/project-hero.jpg");
+    
+    border-radius: 0;
+    background-position: center;
 }
 .texto-hero{
     color: white;
@@ -82,3 +89,17 @@ form{
   .form-input.filled {
     box-shadow: 0 2px 0 0 lightgreen;
   }
+  .contenedor-tarjetas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .card{
+        width: 18rem!important;
+        margin: 10px;
+    }
+    .card-body{
+        padding: 10px;
+    }

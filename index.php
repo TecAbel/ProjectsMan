@@ -35,5 +35,6 @@
     </div>
     <?php echo getFooter() ?>
     <script src="recursosJS/animated-input.js"></script>
+    <script src="recursosJS/login.js"></script>
 </body>
 </html>
