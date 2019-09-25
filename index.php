@@ -16,22 +16,28 @@
             <p class="lead text-center">Sistema de gestión de proyectos.</p>
         </div>    
     </div>
-    <div class="container-fluid border border-secondary frmLogin">
+    <div class="container">
         <form method="post" id="formulario" onsubmit="javascript:return false;">
-            <h4 class="text-uppercase text-center">Login</h4>
-            <p class="lead text-center">Ingrese su usuario y contraseña</p>
-            <div class="form-group">
-                <label for="txtCorreo" class="form-label">Correo</label>
-                <input class="text-lowarecase form-input"  id="txtCorreo" name="txtCorreo" type="email" >
-            </div>
-            <div class="form-group">
-                <label for="txtPass" class="form-label">Contraseña</label>
-                <input type="password" class="form-input" id="txtPass" name="txtPass">
-            </div>
-            <div class="form-gropup">
-                <button class="btn btn-primary w-100 rounded-0" id="btnEntrar">Entrar</button>
+            <div class="card" style="margin: 0 auto;">
+                <h4 class="text-uppercase card-header text-center">Login</h4>
+                <div class="card-body">
+                    <p class="card-title text-center">Ingrese su usuario y contraseña</p>
+                    <div class="form-group">
+                        <label for="txtCorreo" class="form-label">Correo</label>
+                        <input class="text-lowarecase form-input"  id="txtCorreo" name="txtCorreo" type="email" >
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPass" class="form-label">Contraseña</label>
+                        <input type="password" class="form-input" id="txtPass" name="txtPass">
+                    </div>
+                    <div class="form-gropup">
+                        <button class="btn btn-primary w-100 rounded-0" id="btnEntrar">Entrar</button>
+                    </div>
+                    <p class="text-center" style="padding-top: 10px; margin-bottom: 5px;"><a class="badge badge-info rounded-0" href="nuevo-usuario">Crear cuenta</a></p>
+                </div>
             </div>
         </form>
+        
     </div>
     <?php echo getFooter() ?>
     <script src="recursosJS/animated-input.js"></script>
