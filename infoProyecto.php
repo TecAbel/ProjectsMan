@@ -41,8 +41,29 @@
     <hr class="my4">
     <h4 class="text-center">Avances registrados</h4>
     <hr class="my-4">
-    <div class="container-fluid">
-        <div class="card w-100">
+    <div class="container-fluid contenedor-tarjetas">
+        <div class="card">
+            <h5 class="card-header text-center">Nombre avance</h5>
+            <div class="card-body">
+                <h5 class="card-title ">25/09/2019</h5>
+                <p class="text-card text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam doloremque voluptates iste voluptate et, maxime ipsum placeat perspiciatis tempore possimus voluptas. Nemo, quia. Aliquam suscipit pariatur voluptatem velit iste.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header text-center">Nombre avance</h5>
+            <div class="card-body">
+                <h5 class="card-title ">25/09/2019</h5>
+                <p class="text-card text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam doloremque voluptates iste voluptate et, maxime ipsum placeat perspiciatis tempore possimus voluptas. Nemo, quia. Aliquam suscipit pariatur voluptatem velit iste.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header text-center">Nombre avance</h5>
+            <div class="card-body">
+                <h5 class="card-title ">25/09/2019</h5>
+                <p class="text-card text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam doloremque voluptates iste voluptate et, maxime ipsum placeat perspiciatis tempore possimus voluptas. Nemo, quia. Aliquam suscipit pariatur voluptatem velit iste.</p>
+            </div>
+        </div>
+        <div class="card">
             <h5 class="card-header text-center">Nombre avance</h5>
             <div class="card-body">
                 <h5 class="card-title ">25/09/2019</h5>
