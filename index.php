@@ -13,7 +13,7 @@
         <div class="texto-hero">
             <h1 class="display-5 text-center">Bienvenido a ProjectsMan &copy</h1>
             <hr class="my-4 text-white" >
-            <p class="lead text-center">Este es un sistema de gestión de proyectos.</p>
+            <p class="lead text-center">Sistema de gestión de proyectos.</p>
         </div>    
     </div>
     <div class="container-fluid border border-secondary frmLogin">

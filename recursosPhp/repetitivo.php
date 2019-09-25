@@ -17,7 +17,7 @@
         return $librerías;
     }
     function getFooter(){
-        $footer='<footer class="page-footer font-small bg-dark pt-4">
+        $footer='<footer class="page-footer text-small bg-dark pt-4">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
@@ -60,5 +60,17 @@
         </div>
     </footer>';
     return $footer;
+    }
+    function getHeroProject($titulo, $lead){
+        $hero = '<div class="jumbotron hero-project">
+                    <div class="texto-hero">
+                        <h1 class="display-4">'.$titulo.'</h1>
+                        <hr class="my-4 ">
+                        <p class="lead">'.$lead.'</p>
+                    </div>
+                </div>
+        
+        ';
+        return $hero;
     }
 ?>

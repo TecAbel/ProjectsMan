@@ -8,14 +8,8 @@
     <title>Proyectos</title>
     <?php echo getLibreriasHtml() ?>
 </head>
-<body style="backgroud-color: #6c757d">
-    <div class="jumbotron hero-project">
-        <div class="texto-hero">
-            <h1 class="display-4">Proyectos</h1>
-            <hr class="my-4 ">
-            <p class="lead">Aquí a modo de tarjetas podrás ver tus proyectos activos, así como su estado y último avance.</p>
-        </div>
-    </div>
+<body>
+    <?php echo getHeroProject('Proyectos','Aquí a modo de tarjetas podrás ver tus proyectos activos, así como su estado y último avance.') ?>
     <form id="formulario" method="post" onsubmit="javascript:return false;">
         <div class="card" style="margin: 0 auto;">
             <div class="card-body">
