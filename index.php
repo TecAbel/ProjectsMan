@@ -8,7 +8,7 @@
     <title>ProjectsMan</title>
     <?php echo getLibreriasHtml() ?>
 </head>
-<body class="bg-light">
+<body>
     <div class="jumbotron hero">
         <div class="texto-hero">
             <h1 class="display-5 text-center">Bienvenido a ProjectsMan &copy</h1>
