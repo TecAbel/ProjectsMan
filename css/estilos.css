@@ -53,6 +53,9 @@ form input{
     border-bottom: #292d31 2px solid;
     border-radius: 0;
 }
+.inputArchivo{
+
+}
 form{
     padding: 10px;
 }
@@ -85,6 +88,23 @@ form{
     
     
   }
+  .form-file{
+    position: relative;
+    padding: 12px 0px 5px 0;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 2px 0 0 #707070;
+  }
+  .form-textarea{
+    position: relative;
+    padding: 12px 0px 5px 0;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 2px 0 0 #707070;
+    transition: box-shadow 150ms ease-out;
+    height: 100px;
+  }
   
   .form-input.filled {
     box-shadow: 0 2px 0 0 lightgreen;
@@ -97,7 +117,7 @@ form{
     justify-content: center;
     }
     .card{
-        width: 18rem!important;
+        width: 18rem;
         margin: 10px;
     }
     .card-body{

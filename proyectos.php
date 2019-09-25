@@ -12,8 +12,8 @@
     <?php echo getHeroProject('Proyectos','Aquí a modo de tarjetas podrás ver tus proyectos activos, así como su estado y último avance.') ?>
     <form id="formulario" method="post" onsubmit="javascript:return false;">
         <div class="card" style="margin: 0 auto;">
+        <h5 class="card-header">Agregar proyecto</h5>
             <div class="card-body">
-                <h5 class="card-title">Agregar proyecto</h5>
                 <div class="form-group">
                     <label for="txtNombreProyecto" class="form-label">Nombre de proyecto</label>
                     <input type="text" id="txtNombreProyecto"  name="txtNombreProyecto" class="form-input">
@@ -31,59 +31,67 @@
     <div class="container-fluid contenedor-tarjetas">
         
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">Activo</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Requisición</a>
+            <h5 class="card-header text-center">Proyecto 1</h5>
+            <div class="card-body">                
+            <p class="card-text">Estado: Activo</p>
+            <P class="card-text">Últmo avance: Requisición</p>
+                <a href="infoProyecto" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
             </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">Activo</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Requisición</a>
+            <h5 class="card-header text-center">Proyecto 1</h5>
+            <div class="card-body">                
+                <p class="card-text">Estado: Activo</p>
+                <P class="card-text">Últmo avance: Requisición</p>
+                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
             </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">Activo</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Requisición</a>
+            <h5 class="card-header text-center">Proyecto 1</h5>
+            <div class="card-body">                
+                <p class="card-text">Estado: Activo</p>
+                <P class="card-text">Últmo avance: Rquisición</p>
+                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
             </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">Activo</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Requisición</a>
+            <h5 class="card-header text-center">Proyecto 1</h5>
+            <div class="card-body">                
+                <p class="card-text">Estado: Activo</p>
+                <P class="card-text">Últmo avance: Requisición</p>
+                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
             </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">Activo</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Requisición</a>
+            <h5 class="card-header text-center">Proyecto 1</h5>
+            <div class="card-body">                
+                <p class="card-text">Estado: Activo</p>
+                <P class="card-text">Últmo avance: Requisición</p>
+                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
             </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">Activo</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Requisición</a>
+            <h5 class="card-header text-center">Proyecto 1</h5>
+            <div class="card-body">                
+                <p class="card-text">Estado: Activo</p>
+                <P class="card-text">Últmo avance: Requisición</p>
+                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
             </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">Activo</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Requisición</a>
+            <h5 class="card-header text-center">Proyecto 1</h5>
+            <div class="card-body">                
+                <p class="card-text">Estado: Activo</p>
+                <P class="card-text">Últmo avance: Requisición</p>
+                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
             </div>
         </div>
         <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Proyecto 1</h5>
-                <p class="card-text">Activo</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Requisición</a>
+            <h5 class="card-header text-center">Proyecto 1</h5>
+            <div class="card-body">                
+                <p class="card-text">Estado: Activo</p>
+                <P class="card-text">Últmo avance: Requisición</p>
+                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
             </div>
         </div>
     </div>
