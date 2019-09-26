@@ -1,4 +1,4 @@
-<?php require('recursosPhp/repetitivo.php');?>
+<?php require('PHP/repetitivo.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,6 +96,6 @@
         </div>
     </div>
     <?php echo getFooter() ?>
-    <script src="recursosJS/animated-input.js"></script>
+    <script src="JS/animated-input.js"></script>
 </body>
 </html>
