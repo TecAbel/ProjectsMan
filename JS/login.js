@@ -22,7 +22,7 @@ function validateForm(){
     if(validator.form()){
         $.ajax({
             type: "post",
-            url: "recursosPhp/ingreso.php",
+            url: "PHP/ingreso.php",
             data: $("#formulario").serialize(),
             success: function (response) {
                 if(response == true){
