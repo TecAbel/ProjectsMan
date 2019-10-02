@@ -1,4 +1,10 @@
-<?php require('PHP/repetitivo.php');?>
+<?php 
+    require('PHP/repetitivo.php');
+    session_start();
+    if(!$_SESSION['loggeo'] === true){
+        header("Location: index");
+    } 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

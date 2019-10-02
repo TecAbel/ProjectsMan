@@ -9,7 +9,7 @@
     <?php echo getLibreriasHtml() ?>
 </head>
 <body>
-    <?php echo getHeroProject('Detalle de Proyecto 1','Aquí puedes ver los detalles del proyecto; avances, archivos y más.') ?>
+    <?php echo getHeroProject('Detalle de Proyecto 1','Aquí puedes ver los detalles del proyecto; avances, fechas, y más.') ?>
     
     <form id="frmNuevoAvance" onsubmit="javascript:return false;" method="post">
         <div class="card w-100" style="margin: 0 auto; max-width: 40rem;">
@@ -54,6 +54,13 @@
                         <li><a href="#">Archivo 2</a></li>
                     </ul>
                 </p>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-info rounded-0 w-100">Editar avance</a>
+                    
+                </div>
+                <div class="card-footer">
+                <a href="#" class="btn btn-danger rounded-0 w-100">Eliminar avance</a>
+                </div>
             </div>
         </div>
         <div class="card">

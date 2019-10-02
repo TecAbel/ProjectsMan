@@ -24,20 +24,25 @@
                 <h3 class="text-center card-header text-uppercase">Nuevo usuario</h3>
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="txtCorreo" class="form-label">Correo</label>
-                        <input autocomplete="off" type="text" id="txtCorreo" name="txtCorreo" class="text-lowercase form-input">
+                        <label for="txtNombre" class="form-label">Nombre</label>
+                        <input autocomplete="off" type="text" id="txtNombre" name="txtNombre" class="text-capitalize form-input">
                     </div>
                     <div class="form-group">
-                        <label for="txtNombre" class="form-label">Nombre</label>
-                        <input autocomplete="off" type="text" id="txtNombre" name="txtNombre" class="text-lowercase form-input">
+                        <label for="txtCorreo" class="form-label">Correo</label>
+                        <input autocomplete="off" type="text" id="txtCorreo" class="text-lowercase form-input">
                     </div>
+                    <div class="form-group">
+                        <label for="txtCorreo_conf" class="form-label">Confirmar correo</label>
+                        <input autocomplete="off" type="text" id="txtCorreo_conf" name="txtCorreo_conf" class="text-lowercase form-input">
+                    </div>
+                    
                     <div class="form-group">
                         <label for="txtPass" class="form-label">Contraseña</label>
-                        <input autocomplete="off" type="password" id="txtPass" name="txtPass" class="text-lowercase form-input">
+                        <input autocomplete="off" type="password" id="txtPass" class=" form-input">
                     </div>
                     <div class="form-group">
                         <label for="txtPass1" class="form-label">Confirmar contraseña</label>
-                        <input autocomplete="off" type="password" id="txtPass1" name="txtPass1" class="text-lowercase form-input">
+                        <input autocomplete="off" type="password" id="txtPass1" name="txtPass1" class=" form-input">
                     </div>
                     <div class="form-group">
                         <button class="btn btn-success rounded-0 w-100" id="btnCCuenta">Crear cuenta</button>
