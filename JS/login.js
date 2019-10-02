@@ -26,9 +26,9 @@ function validateForm(){
             data: $("#formulario").serialize(),
             success: function (response) {
                 if(response == true){
-                    alertify.alert(response, function(){
-                        window.location='proyectos';
-                    });
+                    location.href="proyectos";
+                }else{
+                    alertify.error(response);
                 }
             }
         });

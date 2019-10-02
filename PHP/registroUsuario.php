@@ -1,5 +1,4 @@
 <?php 
-    require 'SED.php';
     require 'config.php';
 
 
@@ -10,7 +9,7 @@
 
     $nombre = mysqli_real_escape_string($conn, $_POST['txtNombre']);
     $correo = mysqli_real_escape_string($conn, $_POST['txtCorreo_conf']);
-    $pase = mysqli_real_escape_string($conn, SED::encryption($_POST['txtPass1']));
+    $pase = mysqli_real_escape_string($conn, password_hash($_POST['txtPass1'], PASSWORD_DEFAULT));
 
     #solo en host
     $asunto = "Bienvendo(a) $nombre ";
