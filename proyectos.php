@@ -16,19 +16,7 @@
 </head>
 <body>
     <?php echo getHeroProject('Proyectos','Aquí a modo de tarjetas podrás ver tus proyectos activos, así como su estado y último avance.') ?>
-    <div class="navegacion clearfix">
-        <div id="menu-movil" class="menu-movil">
-            <i class="fas fa-ellipsis-h"></i>
-        </div>
-        <div class="navegacion-768 clearfix">
-            <img src="" alt="Logo" style="color:white;" class="logo">
-            <nav id="nav" class="oculto">
-                <a class="" href="proyectos">Proyectos</a>
-                <a class="" href="#page-footer">Contacto</a>
-                <a class="" href="PHP/cerrarSesion.php">Cerrar sesión</a>
-            </nav>
-        </div>
-    </div>
+    <?php echo getNav()?>
     <form id="formulario" method="post" onsubmit="javascript:return false;">
         <div class="card" style="margin: 0 auto;">
         <h5 class="card-header">Agregar proyecto</h5>

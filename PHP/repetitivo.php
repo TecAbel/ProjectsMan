@@ -73,4 +73,21 @@
         ';
         return $hero;
     }
+    function getNav(){
+        $nav = '
+        <div class="navegacion clearfix">
+            <div id="menu-movil" class="menu-movil">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="navegacion-768 clearfix">
+                <img src="" alt="Logo" style="color:white;" class="logo">
+                <nav id="nav" class="oculto">
+                    <a class="" href="proyectos">Proyectos</a>
+                    <a class="" href="#page-footer">Contacto</a>
+                    <a class="" href="PHP/cerrarSesion.php">Cerrar sesión</a>
+                </nav>
+            </div>
+        </div>';
+        return $nav;
+    }
 ?>

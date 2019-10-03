@@ -10,7 +10,7 @@
 </head>
 <body>
     <?php echo getHeroProject('Detalle de Proyecto 1','Aquí puedes ver los detalles del proyecto; avances, fechas, y más.') ?>
-    
+    <?php echo getNav(); ?>
     <form id="frmNuevoAvance" onsubmit="javascript:return false;" method="post">
         <div class="card w-100" style="margin: 0 auto; max-width: 40rem;">
             <h5 class="card-header text-center">Nuevo avance</h5>
@@ -108,5 +108,6 @@
     <?php echo getFooter() ?>
     <script src="JS/animated-input.js"></script>
     <script src="JS/file-button.js"></script>
+    <script src="JS/nav.js"></script>
 </body>
 </html>
