@@ -27,8 +27,10 @@ function validateForm(){
             success: function (response) {
                 if(response == true){
                     location.href="proyectos";
+                }else if(response==false){
+                    alertify.error("Usuario y contraesña incorrectos");
                 }else{
-                    alertify.error(response);
+                    alertify.alert(response);
                 }
             }
         });

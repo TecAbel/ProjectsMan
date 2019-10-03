@@ -1,6 +1,4 @@
-<?php require ('PHP/repetitivo.php'); 
-session_start();
-session_destroy();?>
+<?php require ('PHP/repetitivo.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

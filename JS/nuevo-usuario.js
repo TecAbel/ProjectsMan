@@ -49,7 +49,7 @@ function validarForm(){
             data: $("#frmNUsuario").serialize(),
             success: function (response) {
                 if(response==true){
-                    alertify.message("Registrando nuevo usuario...");
+                    alertify.message("Registrando nuevo usuario");
                     setTimeout(function(){
                         location.href="proyectos";
                     }, 1500);

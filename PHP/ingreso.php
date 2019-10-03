@@ -1,25 +1,31 @@
 <?php
     
-    if((!$_POST['txtCorreo']) or ($_POST['txtPass'])){
-        header("Location: ../index");
+    if(empty($_POST['txtCorreo']) or empty($_POST['txtPass'])){
+        $msg = "Hubo un error, vuelva a intentar, por favor.";
     }else{
-        $msg = "";
-        require_once 'config.php';
+        require 'config.php';
 
         $correo = mysqli_real_escape_string($conn,$_POST['txtCorreo']);
         $pase = mysqli_real_escape_string($conn,$_POST['txtPass']);
-
         $sql = "SELECT pase FROM usuarios WHERE correo = '$correo';";
 
-        $resultado = $conn->query($sql);
-        if($fila = mysqli_fetch_assoc($resultado)){
-            require_once 'SED.php';
-            $pase_db = $fila[0];
+        if($consulta = mysqli_query($conn, $sql)){
+            $consulta_array = $consulta->fetch_assoc();
+            $pase_db = $consulta_array['pase'];
+            if(password_verify($pase,$pase_db)){
+                session_start();
+                $_SESSION['loggeo'] = true;
+                $msg = true;
+            }
+            else{
+                $msg = false;
+            }
         }else{
-            $msg = "Hubo un error: " . mysqli_error($conn);
+            $msg = "Hubo un error: " . $conn->error();
         }
-        return $msg;
         $conn->close();
+        echo $msg;
+        
     }
 
 ?>

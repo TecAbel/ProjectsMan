@@ -17,7 +17,7 @@
         return $librerías;
     }
     function getFooter(){
-        $footer='<footer class="page-footer text-small bg-dark pt-4">
+        $footer='<footer id="page-footer" class="page-footer text-small bg-dark pt-4">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">

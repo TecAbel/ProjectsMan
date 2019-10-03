@@ -1,6 +1,82 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/*barra*/
+
+.navegacion{
+    width: 100%;
+    background-color: #292d31;
+    margin-bottom: 2rem;
+    height: auto;
+}
+@media only screen and (min-width: 768px){
+    .menu-movil{
+        display: none;
+    }
+    .navegacion-768{
+        width: 95%;
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+    .logo{
+        margin-left: 0!important;
+        width: 50%;
+        float: left;
+    }
+    .navegacion-768 nav{
+        text-align: right;
+    }
+    nav{
+        margin-top: 0!important;
+        width: 50%;
+        display: inline-block!important;
+    }
+    nav a{
+        display: inline-block!important;
+    }
+}
+nav{
+    margin-top: 10px;
+    transition: all .3s ease;
+}
+.logo{
+    margin-left: 20px;
+}
+.menu-movil{
+    float: right;
+}
+.menu-movil i{
+    color: white;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+.menu-movil i:hover{
+    cursor: pointer;
+}
+.oculto{
+    display: none;
+}
+nav a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 7px;
+    transition: all .3s ease;
+}
+nav a:hover{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: white;
+}
+/*hero*/
+.jumbotron{
+    margin-bottom: 0;
+}
+
+
 .hero{
     background-position: center;
     
@@ -26,6 +102,13 @@ body{
     border-top: 1px solid white;
     margin: 1em 0;
     padding: 0;
+}
+
+/**Cuerpo**/
+@media only screen and (max-width: 644px){
+    .contenedor-tarjetas .card{
+        margin: 0 auto;
+    }
 }
 .frmLogin{
     width: 300px;
