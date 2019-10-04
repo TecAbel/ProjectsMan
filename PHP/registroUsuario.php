@@ -24,6 +24,7 @@
         #mail($correo, $asunto, $carta);
         session_start();
         $_SESSION['loggeo'] = true;
+        $_SESSION['correo'] = $correo;
         $mensaje = true;
     }else{
         $mensaje = "Hubo un error " . mysqli_error($conn);
