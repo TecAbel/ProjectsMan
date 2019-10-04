@@ -7,6 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ProjectsMan</title>
     <?php echo getLibreriasHtml() ?>
+    <script>
+        window.addEventListener("load", function(){
+            const script = document.createElement("script");
+            const script2 = document.createElement("script")
+            script.src = "JS/animated-input.js";
+            script2.src = "JS/login.js";
+            document.body.appendChild(script);
+            document.body.appendChild(script2);
+        });
+    </script>
 </head>
 <body>
     <div class="jumbotron hero">
@@ -40,7 +50,7 @@
         
     </div>
     <?php echo getFooter() ?>
-    <script src="JS/animated-input.js"></script>
-    <script src="JS/login.js"></script>
+    <!--<script src="JS/animated-input.js"></script>
+    <script src="JS/login.js"></script>-->
 </body>
 </html>

@@ -13,6 +13,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Proyectos</title>
     <?php echo getLibreriasHtml() ?>
+    <script>
+        window.addEventListener("load", function(){
+            const script = document.createElement("script");
+            const script2 = document.createElement("script"),
+                  script3 = document.createElement("script");
+            script.src = "JS/animated-input.js";
+            script2.src = "JS/nav.js";
+            script3.src = "JS/proyectos.js",
+            document.body.appendChild(script);
+            document.body.appendChild(script2);
+            document.body.appendChild(script3);
+        });
+    </script>
 </head>
 <body>
     <?php echo getHeroProject('Proyectos','Aquí a modo de tarjetas podrás ver tus proyectos activos, así como su estado y último avance.') ?>
@@ -103,7 +116,5 @@
         </div>
     </div>
     <?php echo getFooter() ?>
-    <script src="JS/animated-input.js"></script>
-    <script src="JS/nav.js"></script>
 </body>
 </html>
