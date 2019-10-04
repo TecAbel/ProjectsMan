@@ -81,7 +81,7 @@
             </div>
             <div class="navegacion-768 clearfix">
                 <img src="" alt="Logo" style="color:white;" class="logo">
-                <nav id="nav" class="oculto">
+                <nav id="nav" class="oculto ">
                     <a class="" href="proyectos">Proyectos</a>
                     <a class="" href="#page-footer">Contacto</a>
                     <a class="" href="PHP/cerrarSesion.php">Cerrar sesión</a>
