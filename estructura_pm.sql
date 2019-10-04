@@ -4,6 +4,7 @@ create USER 'pm_god'@'localhost' IDENTIFIED BY 'God_P*7';
 GRANT SELECT, DELETE, UPDATE, CREATE, INSERT ON projectsman.* TO 'pm_god'@'localhost';
 USE projectsman;
 
+
 CREATE TABLE usuarios (
 	num_usuario int(8) NOT NULL UNIQUE auto_increment,
     PRIMARY KEY (num_usuario),
@@ -15,7 +16,7 @@ CREATE TABLE usuarios (
 CREATE TABLE proyectos(
 	num_proyecto int(10) NOT NULL UNIQUE AUTO_INCREMENT,
     primary key (num_proyecto),
-    nombre_proyecto char(30) NOT NULL,
+    nombre_proyecto char(30) NOT NULL UNIQUE,
     estado boolean not null default 1
 )CHARACTER SET 'UTF8' COLLATE 'utf8_general_ci';
 
@@ -31,3 +32,11 @@ CREATE TABLE avances(
     detalle_avance varchar(400),
     nota varchar(100)
 )CHARACTER SET 'UTF8' COLLATE 'utf8_general_ci';
+
+# ultimo proyecto registrado
+CREATE OR REPLACE VIEW ultimoProyecto as 
+SELECT max(num_proyecto) as ultimo FROM proyectos; 
+
+#ultimo avance
+create or replace view ultimoavance as
+SELECT num_avance FROM avances WHERE num_avance = (SELECT max(num_avance) FROM avances);
