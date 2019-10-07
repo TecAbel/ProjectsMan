@@ -1,5 +1,6 @@
 <?php 
     require('PHP/repetitivo.php');
+    require('PHP/peticiones.php');
     session_start();
     if(!$_SESSION['loggeo'] === true){
         header("Location: index");
@@ -49,74 +50,10 @@
     </form>
     <hr class="my-4">
     <h4 class="text-center">Proyectos Registrados</h4>
-    <p class="text-small text-center"> <span class="text-warning">NOTA: </span>el último avance estará representado por un botón, al darle clic se verá el detalle de éste y el historial del proyecto.</p>
+    <p class="text-small text-center"> <span class="text-warning">NOTA: </span>Para ver los avances registrados dé click en el botón de "Detalle de proyecto" del proyecto que desea revisar.</p>
     <hr class="my-4">
     <div class="container-fluid contenedor-tarjetas">
-        
-        <div class="card">
-            <h5 class="card-header text-center">Proyecto 1</h5>
-            <div class="card-body">                
-            <p class="card-text">Estado: Activo</p>
-            <P class="card-text">Últmo avance: Requisición</p>
-                <a href="infoProyecto" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
-            </div>
-        </div>
-        <div class="card">
-            <h5 class="card-header text-center">Proyecto 1</h5>
-            <div class="card-body">                
-                <p class="card-text">Estado: Activo</p>
-                <P class="card-text">Últmo avance: Requisición</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
-            </div>
-        </div>
-        <div class="card">
-            <h5 class="card-header text-center">Proyecto 1</h5>
-            <div class="card-body">                
-                <p class="card-text">Estado: Activo</p>
-                <P class="card-text">Últmo avance: Rquisición</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
-            </div>
-        </div>
-        <div class="card">
-            <h5 class="card-header text-center">Proyecto 1</h5>
-            <div class="card-body">                
-                <p class="card-text">Estado: Activo</p>
-                <P class="card-text">Últmo avance: Requisición</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
-            </div>
-        </div>
-        <div class="card">
-            <h5 class="card-header text-center">Proyecto 1</h5>
-            <div class="card-body">                
-                <p class="card-text">Estado: Activo</p>
-                <P class="card-text">Últmo avance: Requisición</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
-            </div>
-        </div>
-        <div class="card">
-            <h5 class="card-header text-center">Proyecto 1</h5>
-            <div class="card-body">                
-                <p class="card-text">Estado: Activo</p>
-                <P class="card-text">Últmo avance: Requisición</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
-            </div>
-        </div>
-        <div class="card">
-            <h5 class="card-header text-center">Proyecto 1</h5>
-            <div class="card-body">                
-                <p class="card-text">Estado: Activo</p>
-                <P class="card-text">Últmo avance: Requisición</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
-            </div>
-        </div>
-        <div class="card">
-            <h5 class="card-header text-center">Proyecto 1</h5>
-            <div class="card-body">                
-                <p class="card-text">Estado: Activo</p>
-                <P class="card-text">Últmo avance: Requisición</p>
-                <a href="#" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
-            </div>
-        </div>
+        <?php echo getProyectos()?>
     </div>
     <?php echo getFooter() ?>
 </body>
