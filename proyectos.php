@@ -35,6 +35,9 @@
         <h5 class="card-header">Agregar proyecto</h5>
             <div class="card-body">
                 <div class="form-group">
+                    <input type="date" name="fecha"  value="<?php echo date("Y-m-d");?>">
+                </div>
+                <div class="form-group">
                     <label for="txtNombreProyecto" class="form-label">Nombre de proyecto</label>
                     <input type="text" id="txtNombreProyecto"  name="txtNombreProyecto" class="form-input">
                 </div>

@@ -15,6 +15,7 @@
             if(password_verify($pase,$pase_db)){
                 session_start();
                 $_SESSION['loggeo'] = true;
+                $_SESSION['correo'] = $correo;
                 $msg = true;
             }
             else{

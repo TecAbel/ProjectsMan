@@ -3,8 +3,8 @@ inner join avances
 on proyectos.num_proyecto = avances.num_proyecto;
 
 SELECT num_avance FROM avances WHERE num_avance = (SELECT max(num_avance) FROM avances);
-
-SELECT proyectos.nombre_proyecto, proyectos.estado, avances.nombre_detalle
+#nombre de proyecto, estado y último proyecto
+SELECT proyectos.nombre_proyecto, proyectos.estado, avances.nombre_detalle as ultimo_avance
 from proyectos inner join avances ON proyectos.num_proyecto = avances.num_proyecto
 WHERE nombre_proyecto = 'Pruebas' AND num_avance=(SELECT num_avance FROM avances WHERE num_avance = (SELECT max(num_avance) FROM avances));
 SELECT * FROM avances;
