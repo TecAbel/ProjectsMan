@@ -33,7 +33,7 @@
                     <h5 class="card-header text-center">'.$nombreProyecto.'</h5>
                     <div class="card-body">                
                     <p class="card-text">Estado: '.$estado.'</p>
-                    <P class="card-text">Últmo avance: '.$numAvance.'</p>
+                    <P class="card-text">Último avance: '.$numAvance.'</p>
                         <a href="infoProyecto?sQrT='.$numProyecto.'" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
                     </div>
                 </div>
