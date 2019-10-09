@@ -28,7 +28,7 @@
     </div>
     <div class="container">
         <form method="post" id="formulario" onsubmit="javascript:return false;">
-            <div class="card" style="margin: 0 auto;">
+            <div class="card card-centrado" >
                 <h4 class="text-uppercase card-header text-center">Login</h4>
                 <div class="card-body">
                     <p class="card-title text-center">Ingrese su usuario y contraseña</p>
