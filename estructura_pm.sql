@@ -40,3 +40,4 @@ SELECT max(num_proyecto) as ultimo FROM proyectos;
 #ultimo avance
 create or replace view ultimoavance as
 SELECT num_avance FROM avances WHERE num_avance = (SELECT max(num_avance) FROM avances);
+#nuevo comentario
