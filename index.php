@@ -43,7 +43,7 @@
                     <div class="form-gropup">
                         <button class="btn btn-primary w-100 rounded-0" id="btnEntrar">Entrar</button>
                     </div>
-                    <p class="text-center" style="padding-top: 10px; margin-bottom: 5px;"><a class="badge badge-info rounded-0" href="nuevo-usuario">Crear cuenta</a></p>
+                    
                 </div>
             </div>
         </form>

@@ -1,4 +1,11 @@
-<?php include 'PHP/repetitivo.php';?>
+<?php 
+    require('PHP/repetitivo.php');
+    require('PHP/peticiones.php');
+    session_start();
+    if(!$_SESSION['loggeo'] === true){
+        header("Location: index");
+    } 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +24,7 @@
             <p class="lead text-center">Sistema de gestión de proyectos.</p>
         </div>    
     </div>
-
+    <?php echo getNav()?>
     <div class="container">
         <form onsubmit="javascript:return false;" method="post" id="frmNUsuario">
             <div class="card" style="margin: 0 auto;">
@@ -52,6 +59,7 @@
         </form>
     </div>
     <?php echo getFooter() ?>
+    <script src="JS/nav.js"></script>
     <script src="JS/animated-input.js"></script>
     <script src="JS/nuevo-usuario.js"></script>
 </body>

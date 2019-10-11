@@ -49,9 +49,8 @@ function validarForm(){
             data: $("#frmNUsuario").serialize(),
             success: function (response) {
                 if(response==true){
-                    alertify.message("Registrando nuevo usuario");
                     setTimeout(function(){
-                        location.href="proyectos";
+                        swal("Usuario registrado", "Ya puede iniciar sesión con el nuevo usuario", "success");
                     }, 1500);
                 }
                 else{

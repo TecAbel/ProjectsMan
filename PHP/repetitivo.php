@@ -13,7 +13,8 @@
         <!-- Alertify-->
         <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/alertify.min.js"></script>
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/alertify.min.css"/>
-        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/bootstrap.min.css"/>';
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/bootstrap.min.css"/>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>';
         return $librerías;
     }
     function getFooter(){
@@ -83,6 +84,7 @@
                 <img src="" alt="Logo" style="color:white;" class="logo">
                 <nav id="nav" class="oculto ">
                     <a class="" href="proyectos">Proyectos</a>
+                    <a class="" href="nuevo-usuario">Crear usuario</a>
                     <a class="" href="#page-footer">Contacto</a>
                     <a class="" href="PHP/cerrarSesion.php">Cerrar sesión</a>
                 </nav>
