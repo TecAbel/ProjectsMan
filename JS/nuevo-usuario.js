@@ -42,7 +42,7 @@ function validarForm(){
         }
     });
 
-    if(validator){
+    if(validator.form()){
         $.ajax({
             type: "post",
             url: "PHP/registroUsuario.php",
