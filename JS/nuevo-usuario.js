@@ -50,6 +50,7 @@ function validarForm(){
             success: function (response) {
                 if(response==true){
                     setTimeout(function(){
+                        document.getElementById('frmNUsuario').reset();
                         swal("Usuario registrado", "Ya puede iniciar sesión con el nuevo usuario", "success");
                     }, 1500);
                 }
