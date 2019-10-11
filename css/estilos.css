@@ -217,3 +217,47 @@ form{
         margin: 10px;
     }
 }
+
+@media only screen and (min-width: 990px){
+    .container.form-nusuario{
+        float: left;
+        width: 30%;
+    }
+    .container.tabla-usuarios{
+        float: right;
+        width: 70%;
+    }
+}
+
+.container.tabla-usuarios{
+    text-align: center;
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 0;
+}
+/********Tabla responsive*******/
+@media only screen and (max-width: 600px){
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}
