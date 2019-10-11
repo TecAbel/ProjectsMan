@@ -235,6 +235,10 @@ form{
     margin: 0 auto;
     padding: 0;
 }
+
+th,td{
+    padding-bottom: 10px;
+}
 /********Tabla responsive*******/
 @media only screen and (max-width: 600px){
     table {
@@ -254,6 +258,9 @@ form{
     tbody td {
         display: block;
         text-align:center;
+    }
+    tbody td:last-child{
+        padding-bottom: 20px;
     }
     tbody td:before {
         content: attr(data-th);

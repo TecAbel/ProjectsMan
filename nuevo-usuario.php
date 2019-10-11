@@ -77,6 +77,12 @@
                             <td><a href="#" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i></a></td>
                             <td><a href="#" class="btn btn-danger rounded-0 w-100"><i class="fas fa-user-minus"></i></a></td>
                         </tr>
+                        <tr>
+                            <td>Oscar</td>
+                            <td>oscar@hotmail.com</td>
+                            <td><a href="#" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i></a></td>
+                            <td><a href="#" class="btn btn-danger rounded-0 w-100"><i class="fas fa-user-minus"></i></a></td>
+                        </tr>
                     </tbody>
                 </table>
             </form>
