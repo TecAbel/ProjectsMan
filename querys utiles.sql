@@ -1,12 +1,28 @@
+select * from proyectos;
+select * from avances;
+select * from usuarios;
 select * from proyectos
 inner join avances
 on proyectos.num_proyecto = avances.num_proyecto;
 
 SELECT num_avance FROM avances WHERE num_avance = (SELECT max(num_avance) FROM avances);
 #nombre de proyecto, estado y último proyecto
-SELECT proyectos.nombre_proyecto, proyectos.estado, avances.nombre_detalle as ultimo_avance
+SELECT proyectos.num_proyecto, proyectos.nombre_proyecto, proyectos.estado,max(avances.num_avance) as ultimo_avance
 from proyectos inner join avances ON proyectos.num_proyecto = avances.num_proyecto
-WHERE nombre_proyecto = 'Pruebas' AND num_avance=(SELECT num_avance FROM avances WHERE num_avance = (SELECT max(num_avance) FROM avances));
+group by nombre_proyecto
+order by nombre_proyecto asc;
+
+# es lo mismo 
+SELECT * from peticion_proyectos;
+
+#nombre detalle 
+select nombre_detalle FROM avances where num_avance = 2;
+
+#el último avance de cada proyecto
+SELECT max(num_avance) FROM avances group by num_proyecto;
+
+
+
 SELECT * FROM avances;
 
 SELECT * FROM ultimoProyecto;
@@ -21,7 +37,7 @@ INSERT INTO proyectos(nombre_proyecto) VALUES ('neuvo proyecto');
 SELECT num_usuario FROM usuarios WHERE correo = 'abelardo@mail.com';
 
 INSERT INTO avances(num_proyecto,num_usuario,fecha,nombre_detalle)
-VALUES ((SELECT * FROM ultimoproyecto),(SELECT num_usuario FROM usuarios WHERE correo = '$correo'), '2019-10-04', 'Se creó proyecto');
+VALUES ((SELECT * FROM ultimoproyecto),(SELECT num_usuario FROM usuarios WHERE correo = 'abelardo@mail.com'), '2019-10-04', 'Se creó proyecto');
 
 INSERT INTO avances(num_proyecto,num_usuario,fecha,nombre_detalle)
 VALUES ('1','1','2019-10-04','prueba 2');
