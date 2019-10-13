@@ -34,7 +34,7 @@
                     <div class="card-body">                
                     <p class="card-text">Estado: '.$estado.'</p>
                     <P class="card-text">Último avance: '.$numAvance.'</p>
-                        <a href="infoProyecto?sQrT='.$numProyecto.'" class="btn btn-primary rounded-0 w-100">Detalle de proyecto</a>
+                        <a href="infoProyecto?sQrT='.$numProyecto.'" class="btn btn-primary rounded-0 w-100">Avances de proyecto</a>
                     </div>
                 </div>
                 ';

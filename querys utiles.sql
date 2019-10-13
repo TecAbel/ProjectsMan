@@ -36,8 +36,19 @@ INSERT INTO proyectos(nombre_proyecto) VALUES ('neuvo proyecto');
 
 SELECT num_usuario FROM usuarios WHERE correo = 'abelardo@mail.com';
 
+
+
+##### AVANCES ######
+
+#Insertar avance DESPUES DE UN INSERT EN PROYECTOS
 INSERT INTO avances(num_proyecto,num_usuario,fecha,nombre_detalle)
 VALUES ((SELECT * FROM ultimoproyecto),(SELECT num_usuario FROM usuarios WHERE correo = 'abelardo@mail.com'), '2019-10-04', 'Se creó proyecto');
 
+#INSERTAR UN AVANCE
 INSERT INTO avances(num_proyecto,num_usuario,fecha,nombre_detalle)
 VALUES ('1','1','2019-10-04','prueba 2');
+#obtener avances de proyecto
+
+SELECT nombre_detalle, fecha, detalle_avance
+FROM avances
+WHERE num_proyecto = '1';

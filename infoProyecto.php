@@ -15,9 +15,10 @@
         <div class="card w-100" style="margin: 0 auto; max-width: 40rem;">
             <h5 class="card-header text-center">Nuevo avance</h5>
             <div class="card-body">
+                <input type="text" id="txtProjecto" name="txtProjecto" value="<?php echo $_GET['sQrT'] ?>" style="visibility: hidden;">
                 <div class="form-group">
                     <label for="txtDate">Fecha: </label>
-                    <input type="date" id="txtDate" name="txtDate">
+                    <input type="date" id="txtDate" name="txtDate" value="<?php echo date("Y-m-d");?>">
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="txtAvance">Nombre avance</label>
@@ -109,5 +110,6 @@
     <script src="JS/animated-input.js"></script>
     <script src="JS/file-button.js"></script>
     <script src="JS/nav.js"></script>
+    <script src="JS/avances.js"></script>
 </body>
 </html>
