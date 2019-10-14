@@ -200,7 +200,7 @@ form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    justify-content: center;
     }
     .card-centrado{
         margin: 0 auto!important;
@@ -229,6 +229,16 @@ form{
     }
 }
 
+@media only screen and (min-width: 768px){
+    .container.contenedor-tarjetas{
+        float: right!important;
+        width: 73%;
+    }
+    .container.contendor-form{
+        float: left;
+        width: 27%;
+    }
+}
 .container.tabla-usuarios{
     text-align: center;
     min-width: 200px;
@@ -267,4 +277,10 @@ th,td{
         display: block;
         text-align:center;
     }
+}
+hr{
+    border:0;
+    border-bottom: #6c757d 1px solid;
+    display: block;
+    width: 96%;
 }

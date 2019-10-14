@@ -36,7 +36,15 @@ function validarForm(){
             url: "PHP/registroAvance.php",
             data: $("#frmNuevoAvance").serialize(),
             success: function (response) {
-                swal(response, "success");
+                if(response == true){
+                    alertify.message("Avance registrado");
+                    setTimeout(() => {
+                        location.reload();
+                    }, 800);
+                }
+                else{
+                    swal("Error", "Detalle del error: "+response, "error");
+                }
             }
         });
     }

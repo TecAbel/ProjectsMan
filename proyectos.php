@@ -31,30 +31,37 @@
 <body>
     <?php echo getHeroProject('Proyectos','Aquí a modo de tarjetas podrás ver tus proyectos activos, así como su estado y último avance.') ?>
     <?php echo getNav()?>
-    <form id="formulario" method="post" onsubmit="javascript:return false;">
-        <div class="card" style="margin: 0 auto;">
-        <h5 class="card-header">Agregar proyecto</h5>
-            <div class="card-body">
-                <div class="form-group">
-                    <input type="date" name="fecha"  value="<?php echo date("Y-m-d");?>">
+    <div class="clearfix">
+        <div class="container contendor-form">
+            <form id="formulario" method="post" onsubmit="javascript:return false;">
+                <div class="card" style="margin: 0 auto;">
+                <h5 class="card-header">Agregar proyecto</h5>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input type="date" name="fecha"  value="<?php echo date("Y-m-d");?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtNombreProyecto" class="form-label">Nombre de proyecto</label>
+                            <input type="text" id="txtNombreProyecto"  name="txtNombreProyecto" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <button id="btnRegistrar" class="btn btn-success rounded-0 w-100">Agregar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="txtNombreProyecto" class="form-label">Nombre de proyecto</label>
-                    <input type="text" id="txtNombreProyecto"  name="txtNombreProyecto" class="form-input">
-                </div>
-                <div class="form-group">
-                    <button id="btnRegistrar" class="btn btn-success rounded-0 w-100">Agregar</button>
-                </div>
+            </form>
+        </div>
+        <div class="container contenedor-tarjetas">
+        <hr class="my-4">
+            <h4 class="text-center">Registro de proyectos</h4>
+            <hr class="my-4">
+            <p class="text-small text-center"> <span class="text-warning">NOTA: </span>Para ver los avances registrados dé click en el botón de "Detalle de proyecto" del proyecto que desea revisar.</p>
+            <div class="container-fluid contenedor-tarjetas">
+                <?php echo getProyectos()?>
             </div>
         </div>
-    </form>
-    <hr class="my-4">
-    <h4 class="text-center">Proyectos Registrados</h4>
-    <p class="text-small text-center"> <span class="text-warning">NOTA: </span>Para ver los avances registrados dé click en el botón de "Detalle de proyecto" del proyecto que desea revisar.</p>
-    <hr class="my-4">
-    <div class="container-fluid contenedor-tarjetas">
-        <?php echo getProyectos()?>
     </div>
+    
     <?php echo getFooter() ?>
 </body>
 </html>
