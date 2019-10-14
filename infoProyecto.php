@@ -37,11 +37,11 @@
                             <label class="form-label" for="txtAvanceDetalle">Detalles del avance</label>
                             <textarea class="form-textarea" name="txtAvanceDetalle" id="txtAvanceDetalle" cols="30" rows="10"></textarea>
                         </div>
-                        <div class="form-group">
+                        <!--<div class="form-group">
                             <input type="file" name="archivo" id="archivo-real" hidden>
                             <button class="btn btn-primary rounded-0" id="btnAgregarArchivo">Agregar archivo</button>
                             <label for="archivo" class="form-file" id="archivo-text">Sin archivo</label>
-                        </div>
+                        </div>-->
                         <div class="form-group">
                             <button id="btnAgregarP" name="btnAgregarP" class="btn btn-success w-100 rounded-0">Agregar avance</button>
                         </div>

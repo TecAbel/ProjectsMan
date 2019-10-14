@@ -54,6 +54,6 @@ SELECT fecha, nombre_detalle, detalle_avance
 FROM avances;
 #obtener avances de proyecto especifico
 
-SELECT nombre_detalle, fecha, detalle_avance
+SELECT nombre_detalle, date_format(fecha,'%d/%m/%y'), detalle_avance
 FROM avances
 WHERE num_proyecto = '1';
