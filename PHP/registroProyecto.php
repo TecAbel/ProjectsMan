@@ -9,8 +9,10 @@
         $fecha = $_POST['fecha'];
         $nombreProyecto = $_POST['txtNombreProyecto'];
         $sql = "INSERT INTO proyectos(nombre_proyecto) VALUES ('$nombreProyecto');";
-        $sql2 = "INSERT INTO avances(num_proyecto,num_usuario,fecha,nombre_detalle)
-        VALUES ((SELECT * FROM ultimoproyecto),(SELECT num_usuario FROM usuarios WHERE correo = '$correo'), '$fecha', 'Se creó proyecto');";
+        /*$sql2 = "INSERT INTO avances(num_proyecto,num_usuario,fecha,nombre_detalle)
+        VALUES ((SELECT * FROM ultimoproyecto),(SELECT num_usuario FROM usuarios WHERE correo = '$correo'), '$fecha', 'Se creó proyecto');";*/
+        $sql2 = "INSERT INTO avances(num_proyecto,num_usuario,fecha,nombre_detalle, detalle_avance)
+        VALUES ((SELECT * FROM ultimoproyecto),(SELECT num_usuario FROM usuarios WHERE correo = '$correo'), '$fecha', 'Inicio de proyecto', 'Se creó proyecto')";
 
         if(mysqli_query($conn, $sql)){
             if(mysqli_query($conn, $sql2)){

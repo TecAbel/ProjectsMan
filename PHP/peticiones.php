@@ -49,4 +49,44 @@
         mysqli_close($conn);
     }
 
+    function getAvances($enNumP){
+        require 'config.php';
+        include('SED.php');
+        $numProyecto = SED::decryption($enNumP);
+        $texto ="";
+        $sql = "SELECT nombre_detalle, date_format(fecha,'%d/%m/%y') as fecha, detalle_avance
+        FROM avances
+        WHERE num_proyecto = '$numProyecto';";
+        $resultado = $conn->query($sql);
+        if(mysqli_num_rows($resultado)>0){
+            while($filas = $resultado->fetch_assoc()){
+                $nombreAvance = $filas['nombre_detalle'];
+                $fecha = $filas['fecha'];
+                $detalles = $filas['detalle_avance'];
+                $texto = $texto . '
+                <div class="card">
+                    <h5 class="card-header text-center">'.$nombreAvance.'</h5>
+                    <div class="card-body">
+                        <h5 class="card-title ">'.$fecha.'</h5>
+                        <p class="text-card text-justify">'.$detalles.'</p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-info rounded-0 w-100">Editar avance</a>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-danger rounded-0 w-100">Eliminar avance</a>
+                        </div>
+                    </div>
+                </div>
+                ';
+            }
+        }
+        else{
+            $texto ='<h3 class="w-100 text-center">Sin avances registrados</h3>';
+        }
+        return $texto;
+        mysqli_close($conn);
+    }
+
+
+
 ?>

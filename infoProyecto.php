@@ -1,6 +1,6 @@
 <?php 
     include('PHP/repetitivo.php');
-
+    require 'PHP/peticiones.php';
     session_start();
     if(!$_SESSION['loggeo'] === true){
         header("Location: index");
@@ -54,7 +54,7 @@
             <h4 class="text-center">Avances registrados</h4>
             <hr class="my-4">
             <div class="container-fluid contenedor-tarjetas">
-            <div class="card">
+                <!--<div class="card">
                     <h5 class="card-header text-center">Nombre avance</h5>
                     <div class="card-body">
                         <h5 class="card-title ">25/09/2019</h5>
@@ -74,48 +74,8 @@
                         <a href="#" class="btn btn-danger rounded-0 w-100">Eliminar avance</a>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <h5 class="card-header text-center">Nombre avance</h5>
-                    <div class="card-body">
-                        <h5 class="card-title ">25/09/2019</h5>
-                        <p class="text-card text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam doloremque voluptates iste voluptate et, maxime ipsum placeat perspiciatis tempore possimus voluptas. Nemo, quia. Aliquam suscipit pariatur voluptatem velit iste.</p>
-                        <h5 class="card-title">Archivos</h5>
-                        <p class="card-text">
-                            <ul>
-                                <li><a href="#">Archivo 1</a></li>
-                                <li><a href="#">Archivo 2</a></li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="card-header text-center">Nombre avance</h5>
-                    <div class="card-body">
-                        <h5 class="card-title ">25/09/2019</h5>
-                        <p class="text-card text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam doloremque voluptates iste voluptate et, maxime ipsum placeat perspiciatis tempore possimus voluptas. Nemo, quia. Aliquam suscipit pariatur voluptatem velit iste.</p>
-                        <h5 class="card-title">Archivos</h5>
-                        <p class="card-text">
-                            <ul>
-                                <li><a href="#">Archivo 1</a></li>
-                                <li><a href="#">Archivo 2</a></li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <h5 class="card-header text-center">Nombre avance</h5>
-                    <div class="card-body">
-                        <h5 class="card-title ">25/09/2019</h5>
-                        <p class="text-card text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nam doloremque voluptates iste voluptate et, maxime ipsum placeat perspiciatis tempore possimus voluptas. Nemo, quia. Aliquam suscipit pariatur voluptatem velit iste.</p>
-                        <h5 class="card-title">Archivos</h5>
-                        <p class="card-text">
-                            <ul>
-                                
-                            </ul>
-                        </p>
-                    </div>
-                </div>
+                </div>-->
+                <?php echo getAvances($_GET['sQrT']);?>
             </div>
         </div>
     </div>
