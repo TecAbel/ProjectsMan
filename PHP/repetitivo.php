@@ -81,7 +81,9 @@
                 <i class="fas fa-ellipsis-h"></i>
             </div>
             <div class="navegacion-768 clearfix">
-                <img src="" alt="Logo" style="color:white;" class="logo">
+                <div class="logod">
+                    <img src="img/diagrama.png" alt="Logo" style="color:white;" class="logo">
+                </div>
                 <nav id="nav" class="oculto ">
                     <a class="" href="proyectos">Proyectos</a>
                     <a class="" href="nuevo-usuario">Usuarios</a>

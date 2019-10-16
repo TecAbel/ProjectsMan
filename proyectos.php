@@ -53,7 +53,7 @@
         </div>
         <div class="container contenedor-tarjetas">
         <hr class="my-4">
-            <h4 class="text-center">Registro de proyectos</h4>
+            <h4 class="text-center">Proyectos registrados</h4>
             <hr class="my-4">
             <p class="text-small text-center"> <span class="text-warning">NOTA: </span>Para ver los avances registrados dé click en el botón de "Avances de proyecto" del proyecto que desea revisar.</p>
             <div class="container-fluid contenedor-tarjetas">

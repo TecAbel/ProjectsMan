@@ -13,6 +13,7 @@ body{
     height: auto;
     z-index: 2;
 }
+
 @media only screen and (min-width: 768px){
     .menu-movil{
         display: none;
@@ -22,10 +23,13 @@ body{
         margin: 0 auto;
         padding: 5px 0;
     }
-    .logo{
+    .logod{
         margin-left: 0!important;
         width: 50%;
         float: left;
+    }
+    img.logo{
+        width: 35px;
     }
     .navegacion-768 nav{
         text-align: right;
