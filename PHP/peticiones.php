@@ -1,6 +1,8 @@
 <?php
-    
-
+    session_start();
+    if(!$_SESSION['loggeo'] === true){
+        header("Location: index");
+    } 
     function getProyectos(){
         require 'config.php';
         include('SED.php');
@@ -88,5 +90,31 @@
     }
 
 
-
+    function getUsuarios(){
+        require 'config.php';
+        require 'SED.php';
+        $texto ="";
+        $sql = "SELECT correo, nombre_user, num_usuario
+        FROM usuarios;";
+        $resultado = $conn->query($sql);
+        if(mysqli_num_rows($resultado)>0){
+            while($filas = $resultado->fetch_assoc()){
+                $nombreUsuario = $filas['nombre_user'];
+                $correo = $filas['correo'];
+                $numUsuario = $filas['num_usuario'];
+                $texto = $texto. '
+                <tr>
+                    <td>'.$nombreUsuario.'</td>
+                    <td>'.$correo.'</td>
+                    <td><a href="infoUsuario?URd='.SED::encryption($numUsuario).'" class="btn btn-danger rounded-0 w-100"><i class="far fa-edit"></i></a></td>
+                </tr>
+                ';
+            }
+        }
+        else{
+            $texto = "Sin usuarios";
+        }
+        return $texto;
+        mysqli_close($conn);
+    }
 ?>

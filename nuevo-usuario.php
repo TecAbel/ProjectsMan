@@ -17,13 +17,7 @@
     <?php echo getLibreriasHtml() ?>
 </head>
 <body>
-    <div class="jumbotron hero">
-        <div class="texto-hero">
-            <h1 class="display-5 text-center">Bienvenido a ProjectsMan &copy</h1>
-            <hr class="my-4 text-white" >
-            <p class="lead text-center">Sistema de gestión de proyectos.</p>
-        </div>    
-    </div>
+    <?php echo getHeroProject('Usuarios','Aquí puedes ver los usuarios registrados y administrar su acceso.') ?>
     <?php echo getNav()?>
     <div class="clearfix">
         <div class="container form-nusuario">
@@ -66,8 +60,7 @@
                         <tr>
                             <th scope="col">Usuario</th>
                             <th scope="col">Correo</th>
-                            <th scope="col">Cambiar contraseña</th>
-                            <th scope="col">Eliminar</th>
+                            <th scope="col">Editar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -75,13 +68,11 @@
                             <td>Alfredo</td>
                             <td>ingjagm@hotmail.com</td>
                             <td><a href="#" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i></a></td>
-                            <td><a href="#" class="btn btn-danger rounded-0 w-100"><i class="fas fa-user-minus"></i></a></td>
                         </tr>
                         <tr>
                             <td>Oscar</td>
                             <td>oscar@hotmail.com</td>
                             <td><a href="#" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i></a></td>
-                            <td><a href="#" class="btn btn-danger rounded-0 w-100"><i class="fas fa-user-minus"></i></a></td>
                         </tr>
                     </tbody>
                 </table>
