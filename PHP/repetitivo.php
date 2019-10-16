@@ -84,9 +84,9 @@
                 <img src="" alt="Logo" style="color:white;" class="logo">
                 <nav id="nav" class="oculto ">
                     <a class="" href="proyectos">Proyectos</a>
-                    <a class="" href="nuevo-usuario">Crear usuario</a>
+                    <a class="" href="nuevo-usuario">Usuarios</a>
                     <a class="" href="#page-footer">Contacto</a>
-                    <a class="" href="PHP/cerrarSesion.php">Cerrar sesión</a>
+                    <a class="" href="PHP/cerrarSesion.php">Salir</a>
                 </nav>
             </div>
         </div>';
