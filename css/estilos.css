@@ -13,6 +13,9 @@ body{
     height: auto;
     z-index: 2;
 }
+img.logo{
+    width: 35px;
+}
 
 @media only screen and (min-width: 768px){
     .menu-movil{
@@ -28,9 +31,7 @@ body{
         width: 50%;
         float: left;
     }
-    img.logo{
-        width: 35px;
-    }
+    
     .navegacion-768 nav{
         text-align: right;
     }

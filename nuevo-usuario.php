@@ -64,16 +64,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Alfredo</td>
-                            <td>ingjagm@hotmail.com</td>
-                            <td><a href="#" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>Oscar</td>
-                            <td>oscar@hotmail.com</td>
-                            <td><a href="#" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i></a></td>
-                        </tr>
+                        <?php echo getUsuarios() ?>
                     </tbody>
                 </table>
             </form>

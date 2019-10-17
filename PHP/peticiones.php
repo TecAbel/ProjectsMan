@@ -106,7 +106,7 @@
                 <tr>
                     <td>'.$nombreUsuario.'</td>
                     <td>'.$correo.'</td>
-                    <td><a href="infoUsuario?URd='.SED::encryption($numUsuario).'" class="btn btn-danger rounded-0 w-100"><i class="far fa-edit"></i></a></td>
+                    <td><a href="infoUsuario?URd='.SED::encryption($numUsuario).'" class="btn btn-info rounded-0 w-100"><i class="far fa-edit"></i></a></td>
                 </tr>
                 ';
             }
