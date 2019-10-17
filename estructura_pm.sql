@@ -33,6 +33,10 @@ CREATE TABLE avances(
     nota varchar(100)
 )CHARACTER SET 'UTF8' COLLATE 'utf8_general_ci';
 
+#administrador de PM p=123
+INSERT INTO usuarios (correo,nombre_user,pase)
+VALUES('admin@mail.com','Abelardo Aqui','$2y$10$j96TT5zMUBc8Edk1nOmNhu91zic/zL4nikEvBgmLJQiIWv/kkH2y2');
+
 # ultimo proyecto registrado
 CREATE OR REPLACE VIEW ultimoProyecto as 
 SELECT max(num_proyecto) as ultimo FROM proyectos; 
