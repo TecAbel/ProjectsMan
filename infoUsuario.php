@@ -38,7 +38,7 @@
                 <div class="card-body">
                     <div class="form-group focused">
                         <label for="txtCorreo" class="form-label">Correo:</label>
-                        <input type="text" id="txtCorreo" name="txtCorreo" value="alfredo@mail.com" class="form-input">
+                        <input type="text" id="txtCorreo" name="txtCorreo" value="<?php echo getCorreo($_GET['URd']) ?>" class="form-input" readonly>
                     </div>
                     <div class="form-group focused">
                         <label for="txtPass" class="form-label">Contraseña:</label>

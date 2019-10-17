@@ -29,7 +29,22 @@ function validarForm(){
     });
 
     if(validator.form()){
-        alert("ok");
+        $.ajax({
+            type: "post",
+            url: "PHP/cambiarPass.php",
+            data: $("#frmUsuario").serialize(),
+            success: function (response) {
+                if(response==true){
+                    swal("Accesso actualizado","Se cambió la contraseña con éxito","success").then(function(){ 
+                        location.reload();
+                    }
+                    );
+                }
+                else{
+                    swal("Hubo un error",response,"error");
+                }
+            }
+        });
     }  
 } 
 

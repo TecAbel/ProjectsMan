@@ -117,4 +117,26 @@
         return $texto;
         mysqli_close($conn);
     }
+
+    function getCorreo($enNumUsuario){
+        require 'config.php';
+        require 'SED.php';
+        $texto ="";
+        $numUsuario = SED::decryption($enNumUsuario);
+        $sql = "SELECT correo
+        FROM usuarios
+        WHERE num_usuario = '$numUsuario';";
+        $resultado = $conn->query($sql);
+
+        if(mysqli_num_rows($resultado)>0){
+            $filas = $resultado->fetch_assoc();
+            $texto = $filas['correo'];
+        }
+        else{
+            mysqli_error($conn);
+        }
+
+        return $texto;
+        mysqli_close($conn);
+    }
 ?>

@@ -57,3 +57,19 @@ FROM avances;
 SELECT nombre_detalle, date_format(fecha,'%d/%m/%y') as fecha, detalle_avance
 FROM avances
 WHERE num_proyecto = '1';
+
+#obtener usuarios
+
+SELECT correo, nombre_user, num_usuario
+FROM usuarios;
+
+#obtener usuario específico
+SELECT correo
+FROM usuarios
+WHERE num_usuario = '';
+
+#cambiar contraseña de un usuario específico
+
+update usuarios
+SET pase = 'nueva' 
+WHERE correo = 'pruebas@mail.com';
