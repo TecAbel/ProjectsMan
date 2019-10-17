@@ -179,6 +179,12 @@ form{
     
     
   }
+
+  .form-input-carga{
+    outline: 0;
+    border: 0;
+    box-shadow: 0 2px 0 0 #707070;
+  }
   .form-file{
     position: relative;
     padding: 12px 0px 5px 0;
