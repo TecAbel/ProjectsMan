@@ -28,7 +28,7 @@ function validateForm(){
                 if(response == true){
                     location.href="proyectos";
                 }else if(response==false){
-                    alertify.error("Usuario y contraesña incorrectos");
+                    alertify.error("Usuario y contraseña incorrectos");
                 }else{
                     alertify.alert(response);
                 }
